@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RED SOCIAL</h1>
+        </header>
+
+        <section class="post-form">
+            <h2>Agregar Nuevo Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Título del post" required>
+                <textarea id="postDescription" placeholder="Descripción del post" required></textarea>
+                <button type="submit">Agregar Post</button>
+            </form>
+        </section>
+
+        <section class="post-filter">
+            <input type="text" id="searchKeyword" placeholder="Buscar por título">
+        </section>
+
+        <section id="postsContainer">
+
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/posts.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

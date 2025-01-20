@@ -1,0 +1,184 @@
+
+ * {
+  --primary-color: rgba(0, 0, 255, 1);
+  --secondary-color: #ffffff;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 8px;
+  --spacing: 16px;
+}
+
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+/* Cabecera */
+header {
+  text-align: center;
+  padding: var(--spacing);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+}
+
+/* Formulario de posts */
+.post-form {
+  background-color: var(--secondary-color);
+  padding: var(--spacing);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-form h2 {
+  margin-bottom: var(--spacing);
+  font-size: 1.5em;
+}
+
+.post-form form input,
+.post-form form textarea,
+.post-form form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: var(--spacing);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+.post-form form button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.post-form form button:hover {
+  background-color: #388e3c;
+}
+
+/* Filtro de búsqueda */
+.post-filter {
+  margin-bottom: var(--spacing);
+}
+
+.post-filter input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+/* Contenedor de posts */
+#postsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing);
+}
+
+/* Estilo de cada post */
+.post {
+  background-color: var(--secondary-color);
+  padding: var(--spacing);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-bottom: var(--spacing);
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.post p {
+  margin-bottom: var(--spacing);
+}
+
+.post small {
+  display: block;
+  margin-bottom: var(--spacing);
+  color: #666;
+}
+
+.post button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.post button:hover {
+  background-color: #388e3c;
+}
+
+/* Estilo de comentarios */
+.comments {
+  margin-top: var(--spacing);
+  border-top: 1px solid #ddd;
+  padding-top: var(--spacing);
+}
+
+.comment {
+  margin-bottom: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment span {
+  flex-grow: 1;
+  margin-right: var(--spacing);
+}
+
+.comment button {
+  background-color: #f44336;
+  color: var(--secondary-color);
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s ease;
+}
+
+.comment button:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .post-form,
+  .post-filter,
+  .post {
+      padding: 12px;
+  }
+
+  #postsContainer {
+      grid-template-columns: 1fr;
+  }
+}
