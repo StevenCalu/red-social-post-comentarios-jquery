@@ -1,4 +1,4 @@
-# red-social-post-comentarios-jquery
+# Explicacion del Proyecto
 Descripción del Proyecto
 Este proyecto es una aplicación web que simula una red social básica. Incluye funcionalidades para crear posts, buscar por títulos y manejar comentarios, todo con una interfaz centrada y bien diseñada.
 
@@ -47,6 +47,3 @@ o Los scripts de JavaScript en la carpeta JS deben estar correctamente enlazados
 Requerimientos
 * Navegador web moderno (Google, Opera, Mozilla).
 * Para editar o personalizar, se necesitan conocimientos básicos de HTML, CSS y JavaScript.
-
-Autor
-* Proyecto desarrollado por un grupo de estudiantes de la ESPE como parte de un ejercicio práctico para construir una aplicación web interactiva
